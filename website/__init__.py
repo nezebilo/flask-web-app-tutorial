@@ -1,10 +1,11 @@
 from flask import Flask
 
-#comment to merge
+# comment to merge
+
 
 def create_app():
     app = Flask(__name__)
-    app.config["SECRET_KEY"] = 'amaterasu'
+    app.config["SECRET_KEY"] = "amaterasu"
 
     from .views import views
     from .auth import auth
@@ -14,5 +15,7 @@ def create_app():
 
     return app
 
+
 def app_test():
+    print("stuff")
     pass
